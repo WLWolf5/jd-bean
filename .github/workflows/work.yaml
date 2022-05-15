@@ -1,0 +1,46 @@
+name: Daily Signin
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+  schedule:
+   - cron: 1 15/24 * * *
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+      
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+        
+    - name: Get Script
+      run: |
+        git clone https://github.com/ZarkZero/test2.git
+        cd test2
+        
+    - name: Run install
+      run: npm install
+
+    - name: Run Script
+      run: |
+        node JD_DailyBonus.js
+
+    - name: Delete workflow runs
+      uses: GitRML/delete-workflow-runs@main
+      with:
+        retain_days: 1
+        keep_minimum_runs: 3
