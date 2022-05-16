@@ -1,0 +1,2 @@
+﻿  - {name: 翻墙党fanqiangdang.com, server: s361.snodes.xyz, port: 443, type: vmess, uuid: d8a393e2-e27e-3422-9f65-3dcdab52f6ac, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /panel, headers: {Host: s361.snodes.xyz}}}
+  - {name: 翻墙党fanqiangdang.com 2, server: s361.snodes.xyz, port: 443, type: vmess, uuid: d8a393e2-e27e-3422-9f65-3dcdab52f6ac, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /panel, headers: {Host: s361.snodes.xyz}}}
