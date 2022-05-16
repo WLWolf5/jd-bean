@@ -50,6 +50,8 @@ proxies:
   - {name: 🇺🇸 usa-sr-106.mitoption.com:443, server: usa-sr-106.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: usa-sr-106.mitoption.com, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 ussc.scsevers.cf:443, server: ussc.scsevers.cf, port: 443, type: trojan, password: sharecentre, sni: ussc.scsevers.cf, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 zones.defun.us:443, server: zones.defun.us, port: 443, type: trojan, password: lpmMwDKeBbKKPq8K, sni: zones.defun.us, skip-cert-verify: true, udp: true}
+
+
   - {name: 165.22.53.6:28443, server: 165.22.53.6, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true, udp: true}
   - {name: 2.58.242.43:443, server: 2.58.242.43, port: 443, type: trojan, password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: true, udp: true}
   - {name: 2.58.242.43:443 2, server: 2.58.242.43, port: 443, type: trojan, password: 7a9a3bb7-43b4YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: true, udp: true}
