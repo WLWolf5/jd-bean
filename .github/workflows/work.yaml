@@ -8,8 +8,8 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-  schedule:
-   - cron: 1 15/24 * * *
+#  schedule:
+#   - cron: 1 15/24 * * *
 
 env:
   TZ: Asia/Shanghai
@@ -38,9 +38,3 @@ jobs:
     - name: Run Script
       run: |
         node JD_DailyBonus.js
-
-    - name: Delete workflow runs
-      uses: GitRML/delete-workflow-runs@main
-      with:
-        retain_days: 1
-        keep_minimum_runs: 3
